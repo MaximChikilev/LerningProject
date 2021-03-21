@@ -12,6 +12,17 @@ abstract class Cosmetics {
     private String priceSegment;
     private String areaOfUsage;
 
+    public Cosmetics(String brand, String name, String assignment, Double volume,  String shade, Boolean scent, String priceSegment, String areaOfUsage) {
+        this.brand = brand;
+        this.name = name;
+        this.assignment = assignment;
+        this.volume = volume;
+        this.shade = shade;
+        this.scent = scent;
+        this.priceSegment = priceSegment;
+        this.areaOfUsage = areaOfUsage;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
